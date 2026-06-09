@@ -12,6 +12,7 @@ public class findtheunique {
         for (int i : arr){
             hash.put(i,hash.getOrDefault(i,0)+1 );
         }
+        System.out.println("The Unique values are: ");
         for(int i : hash.keySet()){
             if(hash.get(i) == 1){
                 System.out.println(i-1 + hash.get(i));
