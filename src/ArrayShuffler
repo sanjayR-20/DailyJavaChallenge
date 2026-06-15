@@ -20,9 +20,9 @@ public class ArrayShuffler{
 
         ListIterator<Integer> i = value.listIterator();
 
-        while (it.hasNext()) {
-            if (it.next() == 0) {
-                it.remove();
+        while(i.hasNext()){
+            if(i.next() == 0){
+                value.remove(i);
                 zeros++;
             }
         }
