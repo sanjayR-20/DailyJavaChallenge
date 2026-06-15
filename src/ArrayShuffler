@@ -18,7 +18,7 @@ public class ArrayShuffler{
     public static void logic(ArrayList<Integer> value) {
         int zeros = 0;
 
-        Iterator<Integer> it = value.iterator();
+        ListIterator<Integer> i = value.listIterator();
 
         while (it.hasNext()) {
             if (it.next() == 0) {
